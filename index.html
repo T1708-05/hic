@@ -2,36 +2,52 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Game tải file</title>
+  <title>Xem ảnh hacked.jpg</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; }
-    #btn { padding: 20px; font-size: 18px; cursor: pointer; }
-    #download { display: none; margin-top: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 800px;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    .caption {
+      margin-top: 12px;
+      font-size: 16px;
+      color: #555;
+    }
   </style>
 </head>
 <body>
-  <h1>click để tải file game hay này 🎉</h1>
-  <button id="btn">Click!</button>
-  <p id="count">licklcikclick</p>
-
-  <!-- Nút tải file -->
-  <a id="download" href="game.exe" download>📂 Tải file của bạn</a>
-
-  <script>
-    let count = 0;
-    const btn = document.getElementById("btn");
-    const counter = document.getElementById("count");
-    const download = document.getElementById("download");
-
-    btn.addEventListener("click", () => {
-      count++;
-      counter.textContent = "Số lần click: " + count;
-      if (count >= 0) {
-        download.style.display = "block";
-        btn.disabled = true;
-        btn.textContent = "Hoàn thành!";
-      }
-    });
-  </script>
+  <div class="container">
+    <h1>🖼️ Ảnh hacked.jpg</h1>
+    <img src="hacked.jpg" alt="Ảnh hacked">
+    <p class="caption">Đây là ảnh mẫu hacked.jpg được hiển thị trực tiếp trên trang web.  không có gì hết tôi up cho người anh em của tôi</p>
+  </div>
 </body>
 </html>
